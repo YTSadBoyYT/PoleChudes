@@ -18,7 +18,7 @@ import java.util.Random;
 
 public class ScreenGame implements  Screen{
     // Список слов, из которых случайным образом будет выбрано одно
-    private static final String[] words = {
+    /*private static final String[] words = {
         "ALBUM", "CERTIFICATE", "ATLAS", "BIOLOGY", "VARIANT", "GEOGRAPHY",
         "GLOBE", "TWO", "DICTATION", "DIARY", "BOARD", "UNIT",
         "NATURAL SCIENCE", "CHRISTMAS TREE", "PAINTING", "ANIMALS", "ASSIGNMENT",
@@ -31,6 +31,9 @@ public class ScreenGame implements  Screen{
         "STUDENT", "STUDIES", "TEACHER", "PHYSICAL EDUCATION", "UNIFORM", "FORMULAS",
         "CHEMISTRY", "COMPASS", "DRAWING", "QUARTER", "READING", "CHEAT SHEET",
         "ALKALINE", "EXAM", "SKIRT", "LANGUAGE"
+    };*/
+    private static final String[] words = {
+        "АЛЬБОМ", "СЕРТИФИКАТ"
     };
 
     // Переменная для хранения выбранного слова fi
@@ -81,8 +84,8 @@ public class ScreenGame implements  Screen{
         btn2 = new Button(fontWhite,"first_screen",150,1300);
         btn3 = new Button(fontWhite,"third_screen",150,700);
         btn4 = new Button(fontWhite,"fourth_screen",150,400);
-        //String s = "АБВГДЕЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЬЫЪЭЮЯ";
-        String s = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        String s = "АБВГДЕЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЬЫЪЭЮЯ";
+        //String s = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         float x = 0;
         float y = SCREEN_HEIGHT/2.7f;
         float w = 100, h = 100;

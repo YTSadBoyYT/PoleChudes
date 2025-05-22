@@ -15,17 +15,16 @@ public class Main extends Game {
     public SpriteBatch batch;
     public OrthographicCamera camera;
     public Vector3 touch;
-    public BitmapFont font;
+    public BitmapFont fontWhite;
+    public BitmapFont fontYellow;
+    public BitmapFont fontGray;
+    public BitmapFont fontBrown;
 
     ScreenSettings screenSettings;
     ScreenGame screenGame;
     ScreenMenu screenMenu;
     ScreenAbout screenAbout;
-    fourth_Screen fourthScreen;
-
-
-
-
+    Fourth_Screen fourthScreen;
 
     @Override
     public void create() {
@@ -35,12 +34,15 @@ public class Main extends Game {
         camera.setToOrtho(false,SCREEN_WIDTH,SCREEN_HEIGHT);
 
         touch = new Vector3();
-        font = new BitmapFont(Gdx.files.internal("stylo90gray.fnt"));
+        fontWhite = new BitmapFont(Gdx.files.internal("stylo90white.fnt"));
+        fontYellow = new BitmapFont(Gdx.files.internal("stylo90yellow.fnt"));
+        fontGray = new BitmapFont(Gdx.files.internal("stylo90gray.fnt"));
+        fontBrown = new BitmapFont(Gdx.files.internal("stylo90brown.fnt"));
         screenSettings = new ScreenSettings(this);
         screenGame = new ScreenGame(this);
         screenMenu = new ScreenMenu(this);
         screenAbout = new ScreenAbout(this);
-        fourthScreen = new fourth_Screen(this);
+        fourthScreen = new Fourth_Screen(this);
 
         setScreen(screenMenu);
 
@@ -52,7 +54,7 @@ public class Main extends Game {
     @Override
     public void dispose() {
         batch.dispose();
-        font.dispose();
+        fontWhite.dispose();
 
     }
 }

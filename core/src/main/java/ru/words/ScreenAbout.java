@@ -25,7 +25,7 @@ public class ScreenAbout implements  Screen{
         batch = main.batch;
         camera = main.camera;
         touch = main.touch;
-        font = main.font;
+        font = main.fontWhite;
         btn6 = new Button(font,"back",0,1600);
         btn = new Button(font,"second_screen",150,1000);
         btn2 = new Button(font,"first_screen",150,1300);

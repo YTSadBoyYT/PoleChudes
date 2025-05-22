@@ -7,7 +7,7 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector3;
 
-public class fourth_Screen implements  Screen{
+public class Fourth_Screen implements  Screen{
     Button btn;
     Button btn2;
     Button btn3;
@@ -20,12 +20,12 @@ public class fourth_Screen implements  Screen{
     public OrthographicCamera camera;
     public Vector3 touch;
     public BitmapFont font;
-    public fourth_Screen(Main main){
+    public Fourth_Screen(Main main){
         this.main = main;
         batch = main.batch;
         camera = main.camera;
         touch = main.touch;
-        font = main.font;
+        font = main.fontWhite;
         btn6 = new Button(font,"back",0,1600);
         btn = new Button(font,"second_screen",150,1000);
         btn2 = new Button(font,"first_screen",150,1300);

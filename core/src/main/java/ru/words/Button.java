@@ -1,14 +1,12 @@
 package ru.words;
 
-
+import static ru.words.Main.*;
 
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.math.Vector3;
 
 public class Button {
-    public static final float SCREEN_WIDTH = 900;
-    public static final float SCREEN_HEIGHT = 1600;
     BitmapFont font;
     String text;
     float x, y;
@@ -48,7 +46,6 @@ public class Button {
     }
 
     public boolean hit(float tx, float ty){
-
         return x<ty && ty<x+width && y>tx && tx>y-height;
     }
 

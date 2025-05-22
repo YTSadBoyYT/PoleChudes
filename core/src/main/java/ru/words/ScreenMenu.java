@@ -13,13 +13,17 @@ public class ScreenMenu implements  Screen{
     Button btn3;
     Button btn4;
     Button btn5;
-    Button Menu;
+    Button btnMenu;
 
     Main main;
     public SpriteBatch batch;
     public OrthographicCamera camera;
     public Vector3 touch;
-    public BitmapFont font;
+    public BitmapFont fontWhite;
+    public BitmapFont fontYellow;
+    public BitmapFont fontGray;
+    public BitmapFont fontBrown;
+
     private Texture d1;
     public ScreenMenu(Main main){
         this.main = main;
@@ -27,15 +31,20 @@ public class ScreenMenu implements  Screen{
 
         camera = main.camera;
         touch = main.touch;
-        font = main.font;
+
+        fontWhite = main.fontWhite;
+        fontYellow = main.fontYellow;
+        fontGray = main.fontGray;
+        fontBrown = main.fontBrown;
 
 
-        btn = new Button(font,"Settings",300,1100);
-        btn2 = new Button(font,"Game",300,1300);
-        btn3 = new Button(font,"About",300,900);
-        btn4 = new Button(font,"Exit",300,700);
+        btn2 = new Button(fontYellow,"Game",350,1200);
+        btn = new Button(fontYellow,"Settings",350,1100);
+        btn3 = new Button(fontYellow,"About",350,1000);
+        btn4 = new Button(fontYellow,"Exit",350,900);
+        btnMenu = new Button(fontYellow,"Menu",150,1300);
         d1 = new Texture("d1.png");
-        Menu = new Button(font,"Menu",150,1300);
+
 
 
     }
